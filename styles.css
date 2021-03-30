@@ -43,4 +43,11 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+#covid-card-container {
+  display: flex;
+  justify-content: center;
 }
