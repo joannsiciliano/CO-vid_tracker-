@@ -45,3 +45,22 @@ function reformatDate(covidDay) {
   formattedDate = monthSlice + "-" + daySlice + "-" + yearSlice
   return formattedDate
 }
+// ------------------------------------
+// $(function() {
+//       $('#datepicker').datepicker({
+//         onSelect: function() {
+//           var date = $(this).val();
+//           checkRange(date);
+//         }
+//       });
+//     });
+
+//     function checkRange(date) {
+//       $('#div1').hide();
+//       $('#div2').hide();
+//       var checkDate = new Date(date),
+//           a = new Date('2014/01/01'),
+//           b = new Date('2015/01/02'),
+//           c = new Date('2015/01/03'),
+//           d = new Date('2016/09/10'),
+//           inRange1 = checkDate >= a && checkDate = c && checkDate 
