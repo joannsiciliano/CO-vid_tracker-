@@ -1,14 +1,12 @@
 #covid-card-container div {
-  background-color: rgb(171, 206, 235);
+  background-color: rgb(211, 168, 219);
+  align-items: center;
   width: 20rem;
-  padding-left: 10px;
+  padding-left: 5px;
   padding-bottom: 5px;
   padding-top: 5px;
   margin-top: 20px;
-  margin-bottom: 20px;
   border-radius: 2rem;
-  border-color: rgb(83, 76, 12);
-  border-width: 5px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -17,30 +15,32 @@
 }
 
 #covid-card-container div li {
-  color: red;
+  color: rgb(90, 48, 62);
+  list-style: none;
 }
 body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
   background-image: url("https://i.imgur.com/OQBghw1.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
-  background-size: inherit;
-}
-h1 {
-  font-family: fantasy;
-  color: rgb(90, 48, 62);
-  text-align: center;
-  font-size: 50px;
-  padding-top: 200px;
-}
-#datePicker {
-  width: 12%;
-  margin: 0 auto;
+  background: size 100vh;
 }
 
-input {
+h1 {
+  font-family: fantasy;
+  text-shadow: 2px 2px 2px #e63c3c;
+  justify-content: center;
+  color: rgb(247, 233, 246);
+  padding-top: 3em;
+
   text-align: center;
-  width: 150px;
-  display: block;
-  float: inline-end;
-  height: 50px;
+  font-size: 4em;
+}
+#input-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
