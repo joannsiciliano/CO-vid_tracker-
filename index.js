@@ -1,15 +1,17 @@
 console.log("sdafasdf");
 const covidAPI = "https://api.covidtracking.com/v1/states/co/daily.json";
-const covidAPIDay = "https://api.covidtracking.com/v1/states/co/daily.json/01";
+// const covidAPIDay = "https://api.covidtracking.com/v1/states/co/daily.json/01";
 const covidCard = document.querySelector("#covid-card-container");
 const covidUL = document.querySelector("#covid-ul");
-
+const datePicker = document.getElementById("date-picker");
 fetch(covidAPI)
   .then((response) => response.json())
   .then((covidDays) =>
     covidDays.forEach((covidDay) => {
       const covidDate = document.createElement("li");
-      covidDate.textContent = "Date: " + covidDay.date;
+      dateString = covidDay.date;
+      formattedDate = reformatDate(covidDay);
+      covidDate.textContent = "Date: " + formattedDate;
 
       const covidPositive = document.createElement("li");
       covidPositive.innerHTML = "Positive Cases: " + covidDay.positive;
@@ -32,8 +34,22 @@ fetch(covidAPI)
 
       const cardDiv = document.createElement("div");
       cardDiv.append(cardUL);
-      console.log(cardDiv);
       covidCard.append(cardDiv);
     })
   );
 console.log(covidUL);
+
+function reformatDate(covidDay) {
+  dateString = covidDay.date.toString();
+  yearSlice = dateString.slice(0, 4);
+  monthSlice = dateString.slice(4, 6);
+  daySlice = dateString.slice(6, 8);
+  formattedDate = monthSlice + "-" + daySlice + "-" + yearSlice;
+  return formattedDate;
+}
+
+function cardGrabber(covidDay) {
+  if (date - picker.value === covidDay.date) {
+    body.append(cardUL);
+  }
+}
