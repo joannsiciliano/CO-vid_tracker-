@@ -23,9 +23,28 @@ body {
   background-image: url("https://i.imgur.com/OQBghw1.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: inherit;
 }
 h1 {
   font-family: fantasy;
-  color: rgb(180, 172, 189);
+  color: rgb(90, 48, 62);
   text-align: center;
+  font-size: 50px;
+  padding-top: 200px;
+}
+#datePicker {
+  width: 12%;
+  margin: 0 auto;
+}
+
+input {
+  text-align: center;
+  width: 150px;
+  display: block;
+  float: inline-end;
+  height: 50px;
+}
+button {
+  display: block;
+  height: 50px;
 }

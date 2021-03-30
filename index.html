@@ -9,16 +9,17 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>CO-Vid Tracker</h1>
-    <label for="date">Date:</label>
-    <input
-      type="date"
-      id="date-picker"
-      name="datePicker"
-      min="2020-03-04"
-      max="2021-03-07"
-    />
-    <button onClick="cardGrabber()">Grab Data</button>
+    <h1><u>CO-Vid Tracker</u></h1>
+    <form id="datePicker">
+      <input
+        type="date"
+        id="date-picker"
+        name="datePicker"
+        min="2020-03-04"
+        max="2021-03-07"
+      />
+      <button onClick="cardGrabber()">Grab Data</button>
+    </form>
 
     <div id="covid-card-container"></div>
   </body>
