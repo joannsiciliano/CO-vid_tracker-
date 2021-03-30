@@ -1,11 +1,9 @@
 const covidAPI = "https://api.covidtracking.com/v1/states/co/daily.json";
-const covidCard = document.querySelector("#covid-card-container");
-const covidUL = document.querySelector("#covid-ul");
 const datePickerForm = document.querySelector("#date-picker");
 
 datePickerForm.addEventListener("change", (event) => {
   event.preventDefault();
-  const dateString = datePickerForm.value; //string ex: "2021-03-03"
+  const dateString = datePickerForm.value; 
   const formattedFormInput = dateToInteger(dateString)
 
   fetch(covidAPI)
@@ -17,6 +15,8 @@ datePickerForm.addEventListener("change", (event) => {
         }
       })
     );
+  
+  datePickerForm.value = ""
 });
 
 function dateToString(dateInteger) {
@@ -37,6 +37,12 @@ function dateToInteger(dateString) {
 }
 
 function renderDayCard(covidDay) {
+  const cardContainer = document.querySelector("#covid-card-container");
+  cardContainer.innerHTML = "";
+
+  const cardDiv = document.createElement("div");
+  const cardUL = document.createElement("ul");
+
   const covidDate = document.createElement("li");
   dateInteger = covidDay.date;
   formattedDate = dateToString(dateInteger);
@@ -52,11 +58,7 @@ function renderDayCard(covidDay) {
   const covidDeaths = document.createElement("li");
   covidDeaths.innerHTML = "Deaths: " + covidDay.death;
 
-  const cardUL = document.createElement("ul");
-
   cardUL.append(covidDate, covidPositive, covidHospitalizations, covidDeaths);
-
-  const cardDiv = document.createElement("div");
   cardDiv.append(cardUL);
-  covidCard.append(cardDiv);
+  cardContainer.append(cardDiv);
 }
