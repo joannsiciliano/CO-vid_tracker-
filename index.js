@@ -19,27 +19,27 @@ datePickerForm.addEventListener("change", (event) => {
     );
 });
 
-function dateToString(covidDay) {
-  dateString = covidDay.date.toString();
+function dateToString(dateInteger) {
+  dateString = dateInteger.toString();
   yearSlice = dateString.slice(0, 4);
   monthSlice = dateString.slice(4, 6);
   daySlice = dateString.slice(6, 8);
-  formattedDate = monthSlice + "-" + daySlice + "-" + yearSlice;
-  return formattedDate
+  formattedDateString = monthSlice + "-" + daySlice + "-" + yearSlice;
+  return formattedDateString
 }
 
 function dateToInteger(dateString) {
   yearSlice = dateString.slice(0, 4);
   monthSlice = dateString.slice(5, 7);
   daySlice = dateString.slice(8, 10);
-  formattedDate = parseInt(yearSlice + monthSlice + daySlice)
-  return formattedDate
+  dateInteger = parseInt(yearSlice + monthSlice + daySlice);
+  return dateInteger
 }
 
 function renderDayCard(covidDay) {
   const covidDate = document.createElement("li");
-  dateString = covidDay.date;
-  formattedDate = reformatDate(covidDay);
+  dateInteger = covidDay.date;
+  formattedDate = dateToString(dateInteger);
   covidDate.textContent = "Date: " + formattedDate;
 
   const covidPositive = document.createElement("li");
@@ -60,9 +60,3 @@ function renderDayCard(covidDay) {
   cardDiv.append(cardUL);
   covidCard.append(cardDiv);
 }
-
-// function cardGrabber(covidDay) {
-//   if (date - picker.value === covidDay.date) {
-//     body.append(cardUL);
-//   }
-// }
