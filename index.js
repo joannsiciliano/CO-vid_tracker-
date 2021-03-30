@@ -1,4 +1,3 @@
-console.log("sdafasdf");
 const covidAPI = "https://api.covidtracking.com/v1/states/co/daily.json";
 // const covidAPIDay = "https://api.covidtracking.com/v1/states/co/daily.json/01";
 const covidCard = document.querySelector("#covid-card-container");
