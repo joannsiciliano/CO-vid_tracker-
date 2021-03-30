@@ -2,40 +2,11 @@ const covidAPI = "https://api.covidtracking.com/v1/states/co/daily.json";
 const covidAPIDay = "https://api.covidtracking.com/v1/states/co/daily.json/01";
 const covidCard = document.querySelector("#covid-card-container");
 const covidUL = document.querySelector("#covid-ul");
+const datePickerForm = document.querySelector('#date-picker')
 
 fetch(covidAPI)
   .then((response) => response.json())
-  .then((covidDays) =>
-    covidDays.forEach((covidDay) => {
-      const covidDate = document.createElement("li");
-      dateString = covidDay.date
-      formattedDate = reformatDate(covidDay);
-      covidDate.textContent = "Date: " + formattedDate;
-
-      const covidPositive = document.createElement("li");
-      covidPositive.innerHTML = "Positive Cases: " + covidDay.positive;
-
-      const covidHospitalizations = document.createElement("li");
-      covidHospitalizations.innerHTML =
-        "Current Hospitalizations: " + covidDay.hospitalizedCurrently;
-
-      const covidDeaths = document.createElement("li");
-      covidDeaths.innerHTML = "Deaths: " + covidDay.death;
-
-      const cardUL = document.createElement("ul");
-
-      cardUL.append(
-        covidDate,
-        covidPositive,
-        covidHospitalizations,
-        covidDeaths
-      );
-
-      const cardDiv = document.createElement("div");
-      cardDiv.append(cardUL);
-      covidCard.append(cardDiv);
-    })
-  );
+  .then((covidDays) => covidDays.forEach((covidDay) => {renderDayCard(covidDay)}))
 
 function reformatDate(covidDay) {
   dateString = (covidDay.date).toString();
@@ -45,22 +16,41 @@ function reformatDate(covidDay) {
   formattedDate = monthSlice + "-" + daySlice + "-" + yearSlice
   return formattedDate
 }
-// ------------------------------------
-// $(function() {
-//       $('#datepicker').datepicker({
-//         onSelect: function() {
-//           var date = $(this).val();
-//           checkRange(date);
-//         }
-//       });
-//     });
 
-//     function checkRange(date) {
-//       $('#div1').hide();
-//       $('#div2').hide();
-//       var checkDate = new Date(date),
-//           a = new Date('2014/01/01'),
-//           b = new Date('2015/01/02'),
-//           c = new Date('2015/01/03'),
-//           d = new Date('2016/09/10'),
-//           inRange1 = checkDate >= a && checkDate = c && checkDate 
+function renderDayCard(covidDay) {
+  const covidDate = document.createElement("li");
+  dateString = covidDay.date;
+  formattedDate = reformatDate(covidDay);
+  covidDate.textContent = "Date: " + formattedDate;
+
+  const covidPositive = document.createElement("li");
+  covidPositive.innerHTML = "Positive Cases: " + covidDay.positive;
+
+  const covidHospitalizations = document.createElement("li");
+  covidHospitalizations.innerHTML =
+    "Current Hospitalizations: " + covidDay.hospitalizedCurrently;
+
+  const covidDeaths = document.createElement("li");
+  covidDeaths.innerHTML = "Deaths: " + covidDay.death;
+
+  const cardUL = document.createElement("ul");
+
+  cardUL.append(covidDate, covidPositive, covidHospitalizations, covidDeaths);
+
+  const cardDiv = document.createElement("div");
+  cardDiv.append(cardUL);
+  covidCard.append(cardDiv);
+}
+
+function findCovidDate(covidDay) {
+  let input = document.querySelector("input");
+  input.onChange = function handleChange (event) {
+    foundDate = covidDay.date.includes(input.value)
+    console.log(foundDate)
+  };
+}
+
+// function handleChange(e) {
+//   log.textContent = `The field's value is
+//       ${e.target.value.length} character(s) long.`;
+// }
