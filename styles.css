@@ -13,12 +13,19 @@
 }
 
 #covid-card-container div:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 #covid-card-container div li {
   color: red;
 }
 body {
-  background-image: url("https://wallpapermemory.com/78668");
+  background-image: url("https://i.imgur.com/OQBghw1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h1 {
+  font-family: fantasy;
+  color: rgb(180, 172, 189);
+  text-align: center;
 }
