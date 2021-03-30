@@ -2,11 +2,7 @@ const covidAPI = "https://api.covidtracking.com/v1/states/co/daily.json";
 const covidAPIDay = "https://api.covidtracking.com/v1/states/co/daily.json/01";
 const covidCard = document.querySelector("#covid-card-container");
 const covidUL = document.querySelector("#covid-ul");
-const datePickerForm = document.querySelector('#date-picker')
 
-fetch(covidAPI)
-  .then((response) => response.json())
-  .then((covidDays) => covidDays.forEach((covidDay) => {renderDayCard(covidDay)}))
 
 function reformatDate(covidDay) {
   dateString = (covidDay.date).toString();
@@ -42,15 +38,21 @@ function renderDayCard(covidDay) {
   covidCard.append(cardDiv);
 }
 
-function findCovidDate(covidDay) {
-  let input = document.querySelector("input");
-  input.onChange = function handleChange (event) {
-    foundDate = covidDay.date.includes(input.value)
-    console.log(foundDate)
-  };
-}
 
-// function handleChange(e) {
-//   log.textContent = `The field's value is
-//       ${e.target.value.length} character(s) long.`;
-// }
+const datePickerForm = document.querySelector('#date-picker')
+datePickerForm.addEventListener("change", (event) => {
+  event.preventDefault();
+  const formInput = datePickerForm.value
+
+  fetch(covidAPI)
+    .then((response) => response.json())
+    .then((covidDays) =>
+      covidDays.map((covidDay) => {
+        const reformattedDate = reformatDate(covidDay.date)
+        console.log(covidDay.date)
+        if (reformattedDate === formInput) {
+          console.log(reformattedDate);
+        }
+      })
+    );
+})
