@@ -1,7 +1,7 @@
 #covid-card-container div {
-  background-color: rgb(171, 206, 235);
+  background-color: rgb(211, 168, 219);
   width: 20rem;
-  padding-left: 10px;
+  padding-left: 5px;
   padding-bottom: 5px;
   padding-top: 5px;
   margin-top: 20px;
@@ -17,7 +17,8 @@
 }
 
 #covid-card-container div li {
-  color: red;
+  color: rgb(90, 48, 62);
+  list-style: none;
 }
 body {
   background-image: url("https://i.imgur.com/OQBghw1.jpg");
@@ -29,18 +30,12 @@ h1 {
   font-family: fantasy;
   color: rgb(90, 48, 62);
   text-align: center;
+  text-rendering: auto;
   font-size: 50px;
   padding-top: 200px;
 }
-#datePicker {
-  width: 12%;
-  margin: 0 auto;
-}
 
-input {
-  text-align: center;
-  width: 150px;
-  display: block;
-  float: inline-end;
-  height: 50px;
+#input-div {
+  display: flex;
+  justify-content: center;
 }
