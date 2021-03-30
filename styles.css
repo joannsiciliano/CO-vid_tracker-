@@ -1,0 +1,31 @@
+#covid-card-container div {
+  background-color: rgb(171, 206, 235);
+  width: 20rem;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 2rem;
+  border-color: rgb(83, 76, 12);
+  border-width: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#covid-card-container div:hover {
+  opacity: 0.7;
+}
+
+#covid-card-container div li {
+  color: red;
+}
+body {
+  background-image: url("https://i.imgur.com/OQBghw1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h1 {
+  font-family: fantasy;
+  color: rgb(180, 172, 189);
+  text-align: center;
+}
