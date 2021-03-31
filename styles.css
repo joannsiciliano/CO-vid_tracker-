@@ -90,14 +90,6 @@ section {
   justify-content: center;
 }
 
-#covid-tracking-project {
-  padding: 20px;
-  font-size: 2rem;
-  width: 2rem;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-}
 
 /* || Date Picker */
 input[type="date"] {

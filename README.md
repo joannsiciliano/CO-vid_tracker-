@@ -15,6 +15,7 @@
 The COvid-19 Tracker displays the impact of the Covid-19 pandemic in Colorado between March 2020 and March 2021.
 
 Source: [The COVID Tracking Project](https://covidtracking.com/)
+
 API: https://api.covidtracking.com/v1/states/co/daily.json/
 
 ## Technologies
@@ -34,23 +35,23 @@ Search for Covid-19 data by date in the state of Colorado
 ## Code Example
 
 ```
-datePickerForm.addEventListener("change", (event) => {
-  event.preventDefault();
-  const dateString = datePickerForm.value;
-  const formattedFormInput = dateToInteger(dateString)
+  datePickerForm.addEventListener("change", (event) => {
+    event.preventDefault();
+    const dateString = datePickerForm.value;
+    const formattedFormInput = dateToInteger(dateString)
 
-  fetch(covidAPI)
-    .then((response) => response.json())
-    .then((covidDays) =>
-      covidDays.forEach((covidDay) => {
-        if (covidDay.date === formattedFormInput) {
-          renderDayCard(covidDay);
-        }
-      })
-    );
+    fetch(covidAPI)
+      .then((response) => response.json())
+      .then((covidDays) =>
+        covidDays.forEach((covidDay) => {
+          if (covidDay.date === formattedFormInput) {
+            renderDayCard(covidDay);
+          }
+        })
+      );
 
-  datePickerForm.value = ""
-});
+    datePickerForm.value = ""
+  });
 ```
 
 ## Inspiration
