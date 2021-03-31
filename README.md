@@ -51,7 +51,7 @@ datePickerForm.addEventListener("change", (event) => {
 We are inspired by the advancements in science over the past year that have propelled our understanding of the Covid-19 pandemic. Our goal is to present factual data on Covid-19 in the state of Colorado and promote vaccination among the general public.
 
 ## Contact
-Covid-19 Tracker was created by [JoAnn Siciliano](www.linkedin.com/in/joannsiciliano) and [Haley Warson](https://www.linkedin.com/in/haleywarson/).
+Covid-19 Tracker was created by [JoAnn Siciliano](https://www.linkedin.com/in/joannsiciliano/) and [Haley Warson](https://www.linkedin.com/in/haleywarson/).
 
 Contact us with any questions.
 
