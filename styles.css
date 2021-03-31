@@ -1,9 +1,5 @@
 /* || General styles */
 
-html { /* smooth scroll to anchor links */
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
 }
@@ -40,7 +36,6 @@ p {
   font-weight: 100;
 }
 
-/* ||Sections */
 section {
   height: 100vh; /* 100% viewport height */
   display: flex;
@@ -104,32 +99,29 @@ section {
   color: white;
 }
 
+/* || Date Picker */
+input[type="date"] {
+  background-color: white;
+  opacity: .7;
+  height: 35px;
+  color: #245d38;
+  font-size: 1.25rem;
+  font-family: museo-slab, serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
 /* || Header and Main Navigation */
 
-header {
-  display: inline flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  line-height: 20px;
-  background-color: white;
-  box-shadow: 0 0 25px 0 black;
-}
-
-header ul {
-  padding: 0;
-}
-
 img {
-  max-width: 5%;
+  max-width: 6%;
 }
 
 .topnav {
   overflow: hidden;
   background-color: white;
   position: relative;
+  box-shadow: 0 0 25px 0 black;
 }
 
 .topnav #myLinks {
