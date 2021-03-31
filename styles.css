@@ -2,38 +2,44 @@
 
 body {
   margin: 0;
+  cursor: crosshair;
 }
 
 h1 {
   color: white;
   text-align: center;
   font-size: 6rem;
-  font-family: museo-slab, serif;
+  font-family: "BabelStoneModernRegular";
+  font-weight: normal;
+  font-style: normal;
   font-style: normal;
   font-weight: 100;
   margin-bottom: 0px;
   margin-top: 0px;
-  text-shadow: 1px 1px black;
+  text-shadow: 2px 2px 2px black;
 }
 
 h2 {
   color: white;
   text-align: center;
   font-size: 5rem;
-  font-family: museo-slab, serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 100;
   text-decoration: none;
-  text-shadow:  1px 1px black;
+  text-shadow: 2px 2px 2px black;
 }
 
 p {
   color: white;
   text-align: center;
   font-size: 1.5rem;
-  font-family: museo-slab, serif;
+  font-family: "BabelStoneModernRegular";
+  font-weight: normal;
   font-style: normal;
-  font-weight: 100;
+  padding-left: 75px;
+  padding-right: 75px;
+  text-shadow: 2px 2px 2px black;
 }
 
 section {
@@ -41,29 +47,39 @@ section {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   text-align: center;
   margin: 0 auto;
 }
 
 #main {
-  background-color: white;
-  background-image: url("https://i.imgur.com/OQBghw1.jpg"); 
+  background-color: transparent;
+  background-image: url("https://i.imgur.com/OQBghw1.jpg");
   opacity: 0.8;
-  background-size: cover; 
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed; 
+  background-attachment: fixed;
 }
 
 /* || Covid Card */
 #covid-card-container div {
-  background-color: #35647e;
+  /* background-color: #35647e; */
+  background: linear-gradient(
+    50deg,
+    #e07d8a,
+    #845784,
+    #345d8c,
+    #000000
+  ); /*new color combo for card, can switch back if you want!*/
   align-items: center;
-  width: 20rem;
+  width: 30rem;
   border-radius: 2rem;
-  font-family: museo slab, serif;
-  margin: 10px;
+  font-family: "BabelStoneModernRegular";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  margin-top: 30px;
 }
 
 #covid-card-container div:hover {
@@ -75,6 +91,7 @@ section {
   list-style-type: none;
   font-size: 1.25rem;
   text-align: left;
+  padding: 8px;
 }
 
 #input-div {
@@ -94,13 +111,18 @@ section {
 /* || Date Picker */
 input[type="date"] {
   background-color: white;
-  opacity: .7;
-  height: 35px;
+  opacity: 0.7;
+  height: 40px;
   color: #245d38;
   font-size: 1.25rem;
-  font-family: museo-slab, serif;
+  font-family: "BabelStoneModernRegular";
+  font-weight: normal;
   font-style: normal;
   font-weight: 100;
+}
+
+input[type="date"]:hover {
+  opacity: .5;
 }
 
 /* || Header and Main Navigation */
@@ -110,8 +132,8 @@ img {
 }
 
 .topnav {
-  overflow: hidden;
-  background-color: white;
+  /* overflow: hidden; */
+  background: linear-gradient(50deg, #845784, #345d8c, #000000);
   position: relative;
   box-shadow: 0 0 25px 0 black;
 }
@@ -120,9 +142,13 @@ img {
   display: none;
 }
 
-.topnav a { /* (resources links menu) */
-  color: #245d38;
-  padding: .9em 1em;
+.topnav a {
+  /* (resources links menu) */
+  color: white;
+  font-family: "BabelStoneModernRegular";
+  font-weight: normal;
+  font-style: normal;
+  padding: 0.9em 1em;
   text-decoration: none;
   font-size: 1rem;
   display: block;
@@ -130,8 +156,13 @@ img {
   list-style-type: none;
 }
 
-.topnav a.icon { /* (resources menu) */
-  background: white;
+.topnav a:hover {
+  opacity: .7;
+}
+
+.topnav a.icon {
+  /* (resources menu) */
+  background: transparent;
   display: block;
   position: absolute;
   right: 0;
@@ -139,12 +170,15 @@ img {
   font-size: 1.3rem;
 }
 
+.topnav a.icon:hover {
+  opacity: .7;
+}
 /* || Footer */
 
 footer {
   text-align: center;
   padding: 15px;
-  background-color: #245d38;
+  background: linear-gradient(50deg, #845784, #345d8c, #000000);
 }
 
 footer p {
@@ -152,8 +186,10 @@ footer p {
   display: inline-block;
   text-align: center;
   font-size: 1.1rem;
-  font-family: museo-slab, serif;
+  font-family: "BabelStoneModernRegular";
+  font-weight: normal;
   font-style: normal;
+
   font-weight: 100;
   margin: 0px;
 }
@@ -163,11 +199,16 @@ footer a {
   display: inline-block;
   text-align: center;
   font-size: 1.1rem;
-  font-family: museo-slab, serif;
+  font-family: "BabelStoneModernRegular";
+  font-weight: normal;
   font-style: normal;
   font-weight: 100;
   margin: 0px;
   text-decoration: none;
+}
+
+footer a:hover {
+  opacity: .7;
 }
 
 /* || Color Palette 
