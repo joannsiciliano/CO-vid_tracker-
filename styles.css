@@ -30,15 +30,24 @@ body {
 }
 
 h1 {
-  font-family: fantasy;
-  text-shadow: 2px 2px 2px #e63c3c;
-  justify-content: center;
+  text-shadow: 2px 2px 2px black;
   color: rgb(247, 233, 246);
-  padding-top: 3em;
-
+  padding-top: 2em;
   text-align: center;
-  font-size: 4em;
+  font-size: 4rem;
+  font-family: museo-slab, serif;
+  font-style: normal;
+  font-weight: 100;
 }
+
+h2 {
+  font-family: fantasy;
+  text-shadow: 2px 2px 2px black;
+  color: rgb(247, 233, 246);
+  text-align: center;
+  font-size: 1.25rem;
+}
+
 #input-div {
   display: flex;
   justify-content: center;
