@@ -59,8 +59,6 @@ function renderDayCard(covidDay) {
   let numPosi = (covidDay.positive / covidDay.totalTestResults) * 100;
   percentPositive.textContent =
     "Percent Positive: " + Number(numPosi.toPrecision(3)) + "%";
-  //   "Percent Positive: " +
-  //   "%";
 
   const covidHospitalizations = document.createElement("li");
   covidHospitalizations.innerHTML =
