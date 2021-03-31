@@ -3,8 +3,8 @@ const datePickerForm = document.querySelector("#date-picker");
 
 datePickerForm.addEventListener("change", (event) => {
   event.preventDefault();
-  const dateString = datePickerForm.value; 
-  const formattedFormInput = dateToInteger(dateString)
+  const dateString = datePickerForm.value;
+  const formattedFormInput = dateToInteger(dateString);
 
   fetch(covidAPI)
     .then((response) => response.json())
@@ -15,8 +15,8 @@ datePickerForm.addEventListener("change", (event) => {
         }
       })
     );
-  
-  datePickerForm.value = ""
+
+  datePickerForm.value = "";
 });
 
 function dateToString(dateInteger) {
@@ -25,7 +25,7 @@ function dateToString(dateInteger) {
   monthSlice = dateString.slice(4, 6);
   daySlice = dateString.slice(6, 8);
   formattedDateString = monthSlice + "-" + daySlice + "-" + yearSlice;
-  return formattedDateString
+  return formattedDateString;
 }
 
 function dateToInteger(dateString) {
@@ -33,7 +33,7 @@ function dateToInteger(dateString) {
   monthSlice = dateString.slice(5, 7);
   daySlice = dateString.slice(8, 10);
   dateInteger = parseInt(yearSlice + monthSlice + daySlice);
-  return dateInteger
+  return dateInteger;
 }
 
 function renderDayCard(covidDay) {
@@ -51,6 +51,17 @@ function renderDayCard(covidDay) {
   const covidPositive = document.createElement("li");
   covidPositive.innerHTML = "Positive Cases: " + covidDay.positive;
 
+  const totalTested = document.createElement("li");
+  totalTested.textContent =
+    "Total Tests Administered: " + covidDay.totalTestResults;
+
+  const percentPositive = document.createElement("li");
+  let numPosi = (covidDay.positive / covidDay.totalTestResults) * 100;
+  percentPositive.textContent =
+    "Percent Positive: " + Number(numPosi.toPrecision(3)) + "%";
+  //   "Percent Positive: " +
+  //   "%";
+
   const covidHospitalizations = document.createElement("li");
   covidHospitalizations.innerHTML =
     "Current Hospitalizations: " + covidDay.hospitalizedCurrently;
@@ -58,7 +69,14 @@ function renderDayCard(covidDay) {
   const covidDeaths = document.createElement("li");
   covidDeaths.innerHTML = "Deaths: " + covidDay.death;
 
-  cardUL.append(covidDate, covidPositive, covidHospitalizations, covidDeaths);
+  cardUL.append(
+    covidDate,
+    covidPositive,
+    totalTested,
+    percentPositive,
+    covidHospitalizations,
+    covidDeaths
+  );
   cardDiv.append(cardUL);
   cardContainer.append(cardDiv);
 }

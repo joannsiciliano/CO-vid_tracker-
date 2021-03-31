@@ -1,6 +1,7 @@
 # COvid-19 Tracker
 
 ## Table of Contents
+
 - [General Info](#general-info)
 - [Technologies](#technologies)
 - [Setup](#setup)
@@ -10,27 +11,32 @@
 - [Contact](#contact)
 
 ## General Info
+
 The COvid-19 Tracker displays the impact of the Covid-19 pandemic in Colorado between March 2020 and March 2021.
 
 Source: [The COVID Tracking Project](https://covidtracking.com/)
-API: https://api.covidtracking.com/v1/states/co/daily.json
+API: https://api.covidtracking.com/v1/states/co/daily.json/
 
 ## Technologies
+
 - JavaScript
 - Html
 - CSS
 
 ## Setup
+
 To use the COvid-19 Tracker, fork and clone this GitHub repository and run lite-server.
 
 ## Features
+
 Search for Covid-19 data by date in the state of Colorado
 
 ## Code Example
+
 ```
 datePickerForm.addEventListener("change", (event) => {
   event.preventDefault();
-  const dateString = datePickerForm.value; 
+  const dateString = datePickerForm.value;
   const formattedFormInput = dateToInteger(dateString)
 
   fetch(covidAPI)
@@ -42,17 +48,17 @@ datePickerForm.addEventListener("change", (event) => {
         }
       })
     );
-  
+
   datePickerForm.value = ""
 });
 ```
 
 ## Inspiration
+
 We are inspired by the advancements in science over the past year that have propelled our understanding of the Covid-19 pandemic. Our goal is to present factual data on Covid-19 in the state of Colorado and promote vaccination among the general public.
 
 ## Contact
+
 Covid-19 Tracker was created by [JoAnn Siciliano](https://www.linkedin.com/in/joannsiciliano/) and [Haley Warson](https://www.linkedin.com/in/haleywarson/).
 
 Contact us with any questions.
-
-
