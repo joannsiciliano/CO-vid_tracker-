@@ -4,25 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CO-vid Tracker</title>
+    <title>COvid-19 Tracker</title>
     <script defer type="text/javascript" src="index.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
 
-    <h1><u>COvid-19 in Colorado</u></h1>
-    <h2>A year in review. Select a date to see the impact of the Covid-19 pandemic in Colorado between March 2020 and March 2021.</h2>
-    <div id="input-div">
-      <input
-        type="date"
-        id="date-picker"
-        name="datePicker"
-        min="2020-03-04"
-        max="2021-03-07"
-      />
+    <div class="topnav">
+      <a href="#main" id="logo"><img src= "https://www.colorado.gov/governor/themes/custom/polis/images/co_C_gov_jp_reverse-logo.svg"/></a>
+      <div id="myLinks">
+        <a href="#main">Home</a>
+        <a href="#resources">Resources</a>
+        <a href="#footer">Data Source</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="navButtons()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
+    
+    <main>
+      <section id="main">
+        <h1><strong>CO</strong>vid-19 Tracker</h1>
+        <p>Select a date below to see the impact of the Covid-19 pandemic in Colorado between March 2020 and March 2021.</p>
+        <div id="input-div">
+          <input
+            type="date"
+            id="date-picker"
+            name="datePicker"
+            min="2020-03-04"
+            max="2021-03-07"
+          />
+        </div>
+        <div id="covid-card-container"> </div>
+      
+      </section>
+      
+      <section id="photo">
+      </section>
+      
+      <section id="resources">
+        <h2>Resources</h2>
+        <ul>
+          <li><a href="https://covid19.colorado.gov/">Colorado Department of Health</a></li>
+          <li><a href="https://covid19.colorado.gov/vaccine">Learn more about vaccines</a></li>
+          <li><a href="https://vaccinefinder.org/">Schedule your vaccine</a></li>
+        </ul>
+      </section>
+    </main>
 
-    <div id="covid-card-container">
-    </div>
+    <footer id="footer">
+        <p>Data source:</p>
+        <a href="https://covidtracking.com/"  target="_blank"><i id="covid-tracking-project"></i></a>
+    </footer>
   </body>
 </html>

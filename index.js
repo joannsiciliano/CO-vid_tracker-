@@ -62,3 +62,12 @@ function renderDayCard(covidDay) {
   cardDiv.append(cardUL);
   cardContainer.append(cardDiv);
 }
+
+function navButtons() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
