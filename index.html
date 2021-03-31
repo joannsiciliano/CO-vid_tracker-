@@ -7,23 +7,41 @@
     <title>COvid-19 Tracker</title>
     <script defer type="text/javascript" src="index.js"></script>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org//face/babelstone-modern"
+      type="text/css"
+    />
   </head>
   <body>
-
     <div class="topnav">
-      <a href="#main" id="logo"><img src= "https://dcs.colorado.gov/sites/dcs/files/styles/image_card/public/CO_Primary_rgb_0.png"/></a>
+      <a href="#main" id="logo"
+        ><img src="https://i.imgur.com/jWZJgsQ.png" title="Home"
+      /></a>
       <div id="myLinks">
-        <a href="https://covid19.colorado.gov/vaccine" target="_blank">Learn more about vaccines</a>
-        <a href="https://vaccinefinder.org/" target="_blank">Schedule your vaccine</a>
-        <a href="https://covid19.colorado.gov/" target="_blank">Colorado Department of Health</a>
+        <a href="https://covid19.colorado.gov/vaccine" target="_blank"
+          >Learn more about vaccines</a
+        >
+        <a href="https://vaccinefinder.org/" target="_blank"
+          >Schedule your vaccine</a
+        >
+        <a href="https://covid19.colorado.gov/" target="_blank"
+          >Colorado Department of Health</a
+        >
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="navButtons()">Resources</a>
+      <a href="javascript:void(0);" class="icon" onclick="navButtons()"
+        >Resources</a
+      >
     </div>
-    
+
     <main>
       <section id="main">
         <h1><strong>CO</strong>vid-19 Tracker</h1>
-        <p>Select a date below to see the impact of the Covid-19 pandemic in Colorado between March 2020 and March 2021.</p>
+        <p>
+          Select a date below to see the impact of the Covid-19 pandemic in
+          Colorado between March 2020 and March 2021.
+        </p>
         <div id="input-div">
           <input
             type="date"
@@ -33,13 +51,17 @@
             max="2021-03-07"
           />
         </div>
-        <div id="covid-card-container"> </div>
+        <div id="covid-card-container"></div>
       </section>
-      
     </main>
 
     <footer id="footer">
-        <p>Data Source: <a href="https://covidtracking.com/"  target="_blank">The Covid Tracking Project</a></p>
+      <p>
+        Data Source:
+        <a href="https://covidtracking.com/" target="_blank"
+          >The Covid Tracking Project</a
+        >
+      </p>
     </footer>
   </body>
 </html>
