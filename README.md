@@ -2,14 +2,19 @@
 
 ## Table of Contents
 
-![-](https://i.imgur.com/SHaN5GA.gif)[General Info](#general-info)![-](https://i.imgur.com/SHaN5GA.gif)
+![-](https://i.imgur.com/SHaN5GA.gif)[General Info](#general-info)
 
-![-](https://i.imgur.com/SHaN5GA.gif)[Technologies](#technologies) ![-](https://i.imgur.com/SHaN5GA.gif)
-![-](https://i.imgur.com/SHaN5GA.gif)[Setup](#setup)![-](https://i.imgur.com/SHaN5GA.gif)
-![-](https://i.imgur.com/SHaN5GA.gif)[Features](#features)![-](https://i.imgur.com/SHaN5GA.gif)
-![-](https://i.imgur.com/SHaN5GA.gif)[Code Example](#code-example)![-](https://i.imgur.com/SHaN5GA.gif)
-![-](https://i.imgur.com/SHaN5GA.gif)[Inspiration](#inspiration)![-](https://i.imgur.com/SHaN5GA.gif)
-![-](https://i.imgur.com/SHaN5GA.gif) [Contact](#contact)![-](https://i.imgur.com/SHaN5GA.gif)
+![-](https://i.imgur.com/SHaN5GA.gif)[Technologies](#technologies)
+
+![-](https://i.imgur.com/SHaN5GA.gif)[Setup](#setup)
+
+![-](https://i.imgur.com/SHaN5GA.gif)[Features](#features)
+
+![-](https://i.imgur.com/SHaN5GA.gif)[Code Example](#code-example)
+
+![-](https://i.imgur.com/SHaN5GA.gif)[Inspiration](#inspiration)
+
+![-](https://i.imgur.com/SHaN5GA.gif) [Contact](#contact)
 
 ## General Info
 
