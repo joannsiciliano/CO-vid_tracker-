@@ -2,7 +2,8 @@
 
 ## Table of Contents
 
-- [General Info](#general-info)
+![-](https://i.imgur.com/SHaN5GA.gif)[General Info](#general-info)
+
 - [Technologies](#technologies)
 - [Setup](#setup)
 - [Features](#features)
