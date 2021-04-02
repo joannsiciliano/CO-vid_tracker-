@@ -41,29 +41,30 @@ To use the COvid-19 Tracker, fork and clone this GitHub repository and run lite-
 
 ## Features
 
-Search for Covid-19 data by date in the state of Colorado
+- Search for Covid-19 data by date in the state of Colorado
+- Access Covid-19 related resources 
 
 ## Code Example
 
-```
-  datePickerForm.addEventListener("change", (event) => {
-    event.preventDefault();
-    const dateString = datePickerForm.value;
-    const formattedFormInput = dateToInteger(dateString)
 
-    fetch(covidAPI)
-      .then((response) => response.json())
-      .then((covidDays) =>
-        covidDays.forEach((covidDay) => {
-          if (covidDay.date === formattedFormInput) {
-            renderDayCard(covidDay);
-          }
-        })
-      );
+        datePickerForm.addEventListener("change", (event) => {
+          event.preventDefault();
+          const dateString = datePickerForm.value;
+          const formattedFormInput = dateToInteger(dateString)
 
-    datePickerForm.value = ""
-  });
-```
+          fetch(covidAPI)
+            .then((response) => response.json())
+            .then((covidDays) =>
+              covidDays.forEach((covidDay) => {
+                if (covidDay.date === formattedFormInput) {
+                  renderDayCard(covidDay);
+                }
+              })
+            );
+
+          datePickerForm.value = ""
+        });
+
 
 ## Inspiration
 
