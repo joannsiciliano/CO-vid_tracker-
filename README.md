@@ -2,13 +2,19 @@
 
 ## Table of Contents
 
-- [General Info](#general-info)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Features](#features)
-- [Code Example](#code-example)
-- [Inspiration](#inspiration)
-- [Contact](#contact)
+![-](https://i.imgur.com/SHaN5GA.gif)[General Info](#general-info)
+
+![-](https://i.imgur.com/SHaN5GA.gif)[Technologies](#technologies)
+
+![-](https://i.imgur.com/SHaN5GA.gif)[Setup](#setup)
+
+![-](https://i.imgur.com/SHaN5GA.gif)[Features](#features)
+
+![-](https://i.imgur.com/SHaN5GA.gif)[Code Example](#code-example)
+
+![-](https://i.imgur.com/SHaN5GA.gif)[Inspiration](#inspiration)
+
+![-](https://i.imgur.com/SHaN5GA.gif) [Contact](#contact)
 
 ## General Info
 
@@ -62,4 +68,4 @@ We are inspired by the advancements in science over the past year that have prop
 
 Covid-19 Tracker was created by [JoAnn Siciliano](https://www.linkedin.com/in/joannsiciliano/) and [Haley Warson](https://www.linkedin.com/in/haleywarson/).
 
-Contact us with any questions.
+Contact us with any questions. ![-](https://i.imgur.com/SHaN5GA.gif)
