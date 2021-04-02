@@ -15,8 +15,6 @@ datePickerForm.addEventListener("change", (event) => {
         }
       })
     );
-
-  // datePickerForm.value = "";
 });
 
 function dateToString(dateInteger) {
@@ -38,7 +36,6 @@ function dateToInteger(dateString) {
 
 function renderDayCard(covidDay) {
   const cardContainer = document.querySelector("#covid-card-container");
-  // cardContainer.innerHTML = "";
 
   const cardDiv = document.createElement("div");
   const cardUL = document.createElement("ul");

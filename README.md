@@ -51,7 +51,7 @@ To use the COvid-19 Tracker, fork and clone this GitHub repository and run lite-
 datePickerForm.addEventListener("change", (event) => {
   event.preventDefault();
   const dateString = datePickerForm.value;
-  const formattedFormInput = dateToInteger(dateString)
+  const formattedFormInput = dateToInteger(dateString);
 
   fetch(covidAPI)
     .then((response) => response.json())
@@ -62,8 +62,6 @@ datePickerForm.addEventListener("change", (event) => {
         }
       })
     );
-
-  datePickerForm.value = ""
 });
 ```
 
