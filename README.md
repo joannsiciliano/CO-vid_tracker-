@@ -27,7 +27,7 @@ Source: [The COVID Tracking Project](https://covidtracking.com/)
 API: https://api.covidtracking.com/v1/states/co/daily.json/
 
 ## Demo
-![COvid-19 Tracker Demo](https://gph.is/g/ZY8bddA)
+![COvid-19 Tracker Demo Gif](Animated GIF-downsized_large.gif)
 
 ## Technologies
 
