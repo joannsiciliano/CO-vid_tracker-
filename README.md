@@ -16,7 +16,7 @@
 
 ![-](https://i.imgur.com/SHaN5GA.gif)[Inspiration](#inspiration)
 
-![-](https://i.imgur.com/SHaN5GA.gif) [Contact](#contact)
+![-](https://i.imgur.com/SHaN5GA.gif)[Contact](#contact)
 
 ## General Info
 
@@ -24,10 +24,10 @@ The COvid-19 Tracker displays the impact of the Covid-19 pandemic in Colorado be
 
 Source: [The COVID Tracking Project](https://covidtracking.com/)
 
-API: https://api.covidtracking.com/v1/states/co/daily.json/
+API: [The COVID Tracking Project - Colorado](https://api.covidtracking.com/v1/states/co/daily.json/)
 
 ## Demo
-![COvid-19 Tracker Demo Gif](Animated GIF-downsized_large.gif)
+![-](Animated GIF-downsized_large.gif)[Demo]
 
 ## Technologies
 
