@@ -88,27 +88,5 @@ function navButtons() {
   }
 }
 
-// 
-// --explanation of statistic/definition on hover?
-// Date: Date
 
-// Date on which data was collected by The COVID Tracking Project.
-// Positive Cases: 
-// Cases (confirmed plus probable)
-
-// Total number of confirmed plus probable cases of COVID-19 reported by the state or territory, ideally per the August 5, 2020 CSTE case definition. Some states are following the older April 5th, 2020 CSTE case definition or using their own custom definitions. Not all states and territories report probable cases. If a state is not reporting probable cases, this field will just represent confirmed cases.
-// Total Tests Administered: 
-// Total test results
-
-// At the national level, this metric is a summary statistic which, because of the variation in test reporting methods, is at best an estimate of US viral (PCR) testing. Some states/territories report tests in units of test encounters, some report tests in units of specimens, and some report tests in units of unique people. Moreover, some jurisdictions include antigen tests in their total test counts without reporting a separate total of viral (PCR) tests. Therefore, this value is an aggregate calculation of heterogeneous figures. Please consult each state or territory’s individual data page to see whether that jurisdiction lumps antigen and PCR tests together and to see what units that jurisdiction uses for test reporting.
-
-// In most states, the totalTestResults field is currently computed by adding positive and negative values because, historically, some states do not report totals, and to work around different reporting cadences for cases and tests. In Colorado, Delaware, the District of Columbia, Florida, Hawaii, Minnesota, Nevada, New York, North Dakota, Pennsylvania, Rhode Island, Virginia, Washington, and Wisconsin, where reliable testing encounters figures are available with a complete time series, we directly report those figures in this field. In Alaska, America Samoa, Arizona, Arkansas, California, Connecticut, Georgia, Illinois, Indiana, Kentucky, Maine, Maryland, Massachusetts, Michigan, Missouri, Montana, Nebraska, New Hampshire, New Mexico, North Carolina, Ohio, Oregon, South Dakota, Tennessee, Texas, Utah, Vermont, West Virginia, and Wyoming, where reliable specimens figures are available with a complete time series, we directly report those figures in this field. In Alabama and Idaho where reliable unique people figures are available with a complete time series, we directly report those figures in this field. We are in the process of switching all states over to use directly reported total figures, using a policy of preferring testing encounters, specimens, and people, in that order.
-// Percent Positive: Cases (confirmed plus probable)
-
-// Total number of confirmed plus probable cases of COVID-19 reported by the state or territory, ideally per the August 5, 2020 CSTE case definition. Some states are following the older April 5th, 2020 CSTE case definition or using their own custom definitions. Not all states and territories report probable cases. If a state is not reporting probable cases, this field will just represent confirmed cases.
-// Current Hospitalizations: Currently hospitalized/Now hospitalized
-// Individuals who are currently hospitalized with COVID-19. Definitions vary by state / territory, and it is not always clear whether pediatric patients are included in this metric. Where possible, we report patients hospitalized with confirmed or suspected COVID-19 cases.
-// Deaths: Deaths (confirmed and probable)
-// Total fatalities with confirmed OR probable COVID-19 case diagnosis (per the expanded CSTE case definition of April 5th, 2020 approved by the CDC). In some states, these individuals must also have COVID-19 listed on the death certificate to count as a COVID-19 death. When states post multiple numbers for fatalities, the metric includes only deaths with COVID-19 listed on the death certificate, unless deaths among cases is a more reliable metric in the state.
-// // create gif demo
 
