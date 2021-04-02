@@ -61,8 +61,6 @@ Search for Covid-19 data by date in the state of Colorado
           }
         })
       );
-
-    datePickerForm.value = ""
   });
 ```
 
