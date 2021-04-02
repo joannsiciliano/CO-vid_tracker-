@@ -16,7 +16,7 @@ datePickerForm.addEventListener("change", (event) => {
       })
     );
 
-  datePickerForm.value = "";
+  // datePickerForm.value = "";
 });
 
 function dateToString(dateInteger) {
@@ -38,7 +38,7 @@ function dateToInteger(dateString) {
 
 function renderDayCard(covidDay) {
   const cardContainer = document.querySelector("#covid-card-container");
-  cardContainer.innerHTML = "";
+  // cardContainer.innerHTML = "";
 
   const cardDiv = document.createElement("div");
   const cardUL = document.createElement("ul");
@@ -67,13 +67,21 @@ function renderDayCard(covidDay) {
   const covidDeaths = document.createElement("li");
   covidDeaths.innerHTML = "Deaths: " + covidDay.death;
 
+  const deleteBtn = document.createElement("button");
+  deleteBtn.textContent = "x";
+  deleteBtn.id = "delete-button";
+  deleteBtn.addEventListener("click", () => {
+    cardDiv.remove();
+  });
+
   cardUL.append(
     covidDate,
     covidPositive,
     totalTested,
     percentPositive,
     covidHospitalizations,
-    covidDeaths
+    covidDeaths,
+    deleteBtn
   );
   cardDiv.append(cardUL);
   cardContainer.append(cardDiv);

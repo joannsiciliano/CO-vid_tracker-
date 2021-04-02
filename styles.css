@@ -80,6 +80,19 @@ section {
   font-style: normal;
   font-size: 14px;
   margin: 10px;
+  padding-top: 10px;
+}
+
+#delete-button {
+  color: red;
+  font-family: "BabelStoneModernRegular";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  border-radius: 2em;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
 }
 
 #covid-card-container div:hover {
@@ -103,7 +116,9 @@ section {
 }
 
 #covid-card-container {
-  display: flex;
+  display: inline-block;
+  flex-flow: column;
+  overflow: auto;
   justify-content: center;
 }
 
@@ -156,7 +171,7 @@ img {
   text-decoration: none;
   font-size: 1rem;
   display: block;
-  text-align: left;
+  text-align: right;
   list-style-type: none;
 }
 
@@ -165,9 +180,14 @@ img {
   background: transparent;
   display: block;
   position: absolute;
-  right: 0;
+  right: 50px;
   top: 0;
   font-size: 1.3rem;
+}
+#logo {
+  display: inline;
+  position: relative;
+  left: 0;
 }
 
 /* || Footer */
