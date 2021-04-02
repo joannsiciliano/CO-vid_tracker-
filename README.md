@@ -28,7 +28,7 @@ API: [The COVID Tracking Project - Colorado](https://api.covidtracking.com/v1/st
 
 ## Demo
 
-![Demo](https://i.imgur.com/sh16tpk.gifv)
+![Demo](https://i.imgur.com/sh16tpk.gif)
 
 ## Technologies
 
