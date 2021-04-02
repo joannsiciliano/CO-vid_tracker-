@@ -27,7 +27,7 @@ Source: [The COVID Tracking Project](https://covidtracking.com/)
 API: [The COVID Tracking Project - Colorado](https://api.covidtracking.com/v1/states/co/daily.json/)
 
 ## Demo
-![Demo](/Users/Gregly/Development/phase-1/CO-vid_tracker-/Assets/Animated GIF-downsized_large.gif)
+![Demo](./Assets/Animated GIF-downsized_large.gif)
 
 ## Technologies
 
