@@ -27,7 +27,8 @@ Source: [The COVID Tracking Project](https://covidtracking.com/)
 API: [The COVID Tracking Project - Colorado](https://api.covidtracking.com/v1/states/co/daily.json/)
 
 ## Demo
-![Demo](./Assets/Animated GIF-downsized_large.gif)
+
+![Demo](https://i.imgur.com/sh16tpk.gif)
 
 ## Technologies
 
@@ -45,7 +46,6 @@ To use the COvid-19 Tracker, fork and clone this GitHub repository and run lite-
 - Access Covid-19 related resources 
 
 ## Code Example
-
 
         datePickerForm.addEventListener("change", (event) => {
           event.preventDefault();
