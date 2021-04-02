@@ -4,7 +4,7 @@
 
 ![-](https://i.imgur.com/SHaN5GA.gif)[General Info](#general-info)
 
-![-](https://i.imgur.com/SHaN5GA.gif)[General Info](#demo)
+![-](https://i.imgur.com/SHaN5GA.gif)[Demo](#demo)
 
 ![-](https://i.imgur.com/SHaN5GA.gif)[Technologies](#technologies)
 
@@ -27,7 +27,7 @@ Source: [The COVID Tracking Project](https://covidtracking.com/)
 API: https://api.covidtracking.com/v1/states/co/daily.json/
 
 ## Demo
-<div style="width:100%;height:0;padding-bottom:57%;position:relative;"><iframe src="https://giphy.com/embed/pObn5P2viCqnaUtY3Z" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/pObn5P2viCqnaUtY3Z"></a></p>
+(https://gph.is/g/ZY8bddA)
 
 ## Technologies
 
